@@ -1,0 +1,30 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display:block;}
+body{line-height:1;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+body{background-color:#CCC;}
+#page{width:800px;margin:0 auto;background-color:#FFF;line-height:1.4;}
+#hd1 hgroup{padding:20px;}
+#hd1 h1{font-size:120%;font-weight:bold;}
+#hd1 h2{margin:0 15px;color:#666;}
+#hd1 nav{background-color:#EEE;padding:5px 20px;text-align:center;}
+#hd1 li{display:inline-block;}
+#hd1 li a{display:inline-block;text-decoration:none;padding:0 20px;line-height:2;}
+#contents{display:-webkit-box;display:-moz-box;}
+#main{background:#FFF;-webkit-box-flex:1;-moz-box-flex:1;-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;padding:15px;}
+#main section{}
+#main section header{border-bottom:1px solid #CCC;margin-bottom:1em;}
+#main section header h1{font-weight:bold;font-size:110%;}
+#main section h2{font-weight:bold;margin-bottom:0.5em;border-bottom:1px solid #EEE;}
+#main section footer{font-size:86%;color:#666;text-align:right;}
+#main section p{margin-bottom:1em;}
+#main .hs2{border:1px solid #EEE;padding:1em;margin:10px 0;background-color:#FAFAFA;font-size:90%;}
+#sidebar{width:200px;padding:10px;background:#FAFAFA;-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;}
+#sidebar li a{display:block;padding:4px 10px;line-height:1.6;text-decoration:none;border-bottom:1px solid #DDD;}
+#footer{padding:20px;background-color:#DDD;border-top:1px solid #CCC;text-align:right;}
