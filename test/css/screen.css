@@ -99,8 +99,12 @@ body {
 
 #hd1 nav {
 	background-color: #EEE;
-	padding: 5px 20px;
-	text-align: center;
+	text-align: left;
+	border-bottom:1px solid #DDD;
+	box-shadow: 0px 1px 3px #DDD;
+	-moz-box-shadow: 0px 1px 3px #DDD;  
+	-webkit-box-shadow: 0px 1px 3px #DDD;
+	margin-bottom:3px;
 }
 
 #hd1 li {
@@ -112,6 +116,24 @@ body {
 	text-decoration: none;
 	padding:0 20px;
 	line-height: 2;
+	text-align: center;
+	font-size:90%;
+	
+}
+
+#hd1 nav,
+#hd1 li a{
+	background-image: url(../img/bg_menu.png);
+}
+
+#hd1 li a:hover {
+	background-position: 0px 80px;
+}
+
+#hd1 span{
+	background-position: 4px 0px;
+	padding: 4px 0 0px 30px;
+	line-height:3;
 }
 
 #contents{
@@ -175,10 +197,11 @@ body {
 
 #sidebar li a{
 	display:block;
-	padding: 4px 10px;
+	padding: 4px 4px 4px 24px;
 	line-height: 1.6;
 	text-decoration: none;
-	border-bottom: 1px solid #DDD;	
+	border-bottom: 1px solid #DDD;
+	background-position: 0 50%;
 }
 
 #footer{
@@ -187,3 +210,29 @@ body {
 	border-top: 1px solid #CCC;
 	text-align: right;
 }
+
+.home{
+	background-image: url(../img/Home.png);
+	background-repeat: no-repeat;
+}
+
+.about{
+	background-image: url(../img/about.png);
+	background-repeat: no-repeat;
+}
+
+.service{
+	background-image: url(../img/service.png);
+	background-repeat: no-repeat;
+}
+
+.contact{
+	background-image: url(../img/contact.png);
+	background-repeat: no-repeat;
+}
+
+.settings{
+	background-image: url(../img/Gear.png);
+	background-repeat: no-repeat;
+}
+
