@@ -22,19 +22,12 @@ def dataURL(imgfile):
         return data
     return False
 
-def run(args, options):
-    css_file = options.infile
+
+def compress( css_file ):
     mime = mimetypes.guess_type(css_file)[0]
-    
     if (os.path.isfile( css_file ) and mime =="text/css"):
-        filename, ext = os.path.splitext( os.path.basename(css_file) )
         css_path = os.path.dirname( os.path.abspath( css_file ) )
         css_body = ""
-        
-        if options.outfile == None:
-            out_file = filename + compPrefix + ext
-        else :
-            out_file = options.outfile
         
         with open(css_file) as f:
             for line in f:
@@ -55,14 +48,29 @@ def run(args, options):
             data = dataURL(img_url)
             if data != False :
                 css_body = re.sub(img_url, data, css_body)
- 
+        
+        return css_body
+
+    else :
+        return False
+
+def run(args, options):
+    css_file = options.infile
+    css_body = compress( css_file )
+    
+    if css_body != False :
+        filename, ext = os.path.splitext( os.path.basename(css_file) )
+        if options.outfile == None:
+            out_file = filename + compPrefix + ext
+        else :
+            out_file = options.outfile
+
         try:
             f = open(out_file, 'w')
             f.writelines(css_body)
             print "compCSS: " + css_file + " -> " + out_file
         finally:
             f.close()
-
 
 def main():
     usage = 'usage: %prog [options] CSS_file'
