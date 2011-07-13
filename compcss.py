@@ -17,9 +17,10 @@ compPrefix ='_comp'
 def dataURL(imgfile):
     if os.path.isfile(imgfile) :
         mimetype =  mimetypes.guess_type(imgfile)[0]
-        allData = open(imgfile).read()
-        data = "'data:"+mimetype+";base64,"+base64.b64encode(allData).strip()+"'"
-        return data
+        if mimetype.index('image') >= 0 : 
+            allData = open(imgfile).read()
+            data = "'data:"+mimetype+";base64,"+base64.b64encode(allData).strip()+"'"
+            return data
     return False
 
 
@@ -31,7 +32,12 @@ def compress( css_file ):
         
         with open(css_file) as f:
             for line in f:
-                css_body += line.strip()
+                l = line.strip()
+                importFiles = re.findall(r'(@import (url)?[\(\'\"]*([^\'\"\)]*)[\'\"\)]*;)',l)
+                if len(importFiles) > 0 :
+                    css_file = css_path + "/"+ importFiles[0][2]
+                    l = compress( css_file )
+                css_body += l
 
         css_body = re.sub(r'\r','', css_body)
         css_body = re.sub(r'[\t\n]','', css_body)
