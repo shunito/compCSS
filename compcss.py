@@ -15,6 +15,9 @@ version = "%prog 0.1"
 compPrefix ='_comp'
 
 def dataURL(imgfile):
+    if imgfile.find('data:') >= 0 :
+        return False
+    
     if os.path.isfile(imgfile) :
         mimetype =  mimetypes.guess_type(imgfile)[0]
         if mimetype.index('image') >= 0 : 
