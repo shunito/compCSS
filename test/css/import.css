@@ -1,5 +1,2 @@
-
-@import url('screen.css');
-@import 'screen.css';
-@import "screen.css";
+@import url('reset.css');
 @import url("screen.css");

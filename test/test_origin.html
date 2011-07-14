@@ -2,73 +2,63 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>EcompCSS test : Original CSS</title>
+	<title>compCSS test : Original CSS</title>
 	<meta name="description" content="compCSS Test page">
 	<meta name="author" content="Shunsuke Ito">
-	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/import.css">
 </head>
 <body class="basic">
 <div id="page">
-	<header id="hd1">
-		<hgroup>
-		<h1>This is Main Title</h1>
-		<h2>tagline</h2>
-		</hgroup>
-		<nav>
-			<ul>
-				<li><a href="#"><span class="home">Home</span></a></li>
-				<li><a href="#"><span class="about">About</span></a></li>
-				<li><a href="#"><span class="service">Services</span></a></li>
-				<li><a href="#"><span class="contact">Contact</span></a></li>
-				<li><a href="#"><span class="settings">Settings</span></a></li>
-			</ul>
-		</nav>
-	</header><!-- #hd1 -->
+  <div id="header">
+  	<h1>Web site name</h1><h2>Header</h2>
+  	<div class="nav">
+  	<ul>
+  		<li><a href="#"><span class="home">Home</span></a></li>
+  		<li><a href="#"><span class="service">Service</span></a></li>
+  		<li><a href="#"><span class="about">About</span></a></li>
+  		<li><a href="#"><span class="settings">Setting</span></a></li>
+  	</ul>
+  	</div>
+  </div>
+  <div id="main">
+  	<div class="section">
+  	<h1>H1: buttons</h1>
+  	
+  	<a href="#" class="btn home">HOME</a>
+  	<a href="#" class="btn about">About</a>
+  	<a href="#" class="btn service">Service</a>
+  	<a href="#" class="btn contact">Contact</a>
+  	
+  	</div>
 
-	<div id="contents">
-	<div id="main">
-		<section class="hs1">
-			<header>
-			<h1>This is a Page Sub Title</h1>
-			</header>
-			<p>Some content...</p>
+  	<div class="section">
+  	<h2>H2: text</h2>
+  	<p>The quick brown fox jumps over the lazy dog. </p>
+  	</div>
 
-			<h2>Demonstrating EM and STRONG</h2>
+  	<div class="section">
+  	<h3>H3: table</h3>
+  	<table class="basic">
+  	<thead><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead>
+  	<tbody>
+  		<tr><th>1</th><td>2</td><td>3</td><td>4</td></tr>
+  		<tr><th>1</th><td>2</td><td>3</td><td>4</td></tr>
+  		<tr><th>1</th><td>2</td><td>3</td><td>4</td></tr>
+  		<tr><th>1</th><td>2</td><td>3</td><td>4</td></tr>
+  		<tr><th>1</th><td>2</td><td>3</td><td>4</td></tr>
+  	</tbody>
+  	</table>
+  	</div>
 
-			<p><strong>This text will have more importance (SEO-wise and contextually)</strong></p>
-			<p><b>This text has visual importance but has no contextual or SEO importance</b></p>
-			<p>This is a <em>very</em> colloquial expression.</p>
-			<footer>
-			<p>Author: <cite>Shunsuke Ito</cite></p>
-			</footer>
-		</section><!-- .hs1 -->
-
-		<section class="hs2">
-		<h1>This is another section</h1>
-		<p>This is some dummy content</p>
-		</section><!-- .hs2 -->
-
-	</div><!-- /#main -->
-
-	<aside id="sidebar">
-	<p>Sidebar content</p>
-		<nav>
-			<ul>
-				<li><a href="#" class="home">Home</a></li>
-				<li><a href="#" class="about">About</a></li>
-				<li><a href="#" class="service">Services</a></li>
-				<li><a href="#" class="contact">Contact</a></li>
-				<li><a href="#" class="settings">Settings</a></li>
-			</ul>
-		</nav>
-
-	</aside>
-
-	</div><!-- /#contents -->
-
-	<footer id="footer">
-	<p>copyright © Shunsuke Ito</p>
-	</footer><!-- /#footer -->
-</div>
+  	<div class="section">
+  	<h4>H4: background image</h4>
+  	<p><img src="img/bg_menu.png" width="6" height="160" alt="background image"></p>
+  	</div>
+  
+  </div>
+  <div id="footer">
+  	<address>copyright &copy; Shunsuke Ito</address>
+  </div>
+</div><!-- /#page -->
 </body>
 </html>
