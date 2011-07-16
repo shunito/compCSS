@@ -109,7 +109,7 @@ body {
 
 a.btn{
 	color:#333;
-	display: inline-box;
+	display: inline-block;
 	padding: 6px 20px 6px 32px;
 	text-decoration: none;
 	border: 1px solid #CCC;
@@ -164,29 +164,3 @@ table.basic tbody th {
 	border-top: 1px solid #CCC;
 	text-align: right;
 }
-
-.home{
-	background-image: url(../img/Home.png);
-	background-repeat: no-repeat;
-}
-
-.about{
-	background-image: url(../img/about.png);
-	background-repeat: no-repeat;
-}
-
-.service{
-	background-image: url(../img/service.png);
-	background-repeat: no-repeat;
-}
-
-.contact{
-	background-image: url(../img/contact.png);
-	background-repeat: no-repeat;
-}
-
-.settings{
-	background-image: url(../img/Gear.png);
-	background-repeat: no-repeat;
-}
-

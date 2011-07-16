@@ -1,0 +1,26 @@
+
+.home{
+	background-image: url(../../img/Home.png);
+	background-repeat: no-repeat;
+}
+
+.about{
+	background-image: url(../../img/about.png);
+	background-repeat: no-repeat;
+}
+
+.service{
+	background-image: url(../../img/service.png);
+	background-repeat: no-repeat;
+}
+
+.contact{
+	background-image: url(../../img/contact.png);
+	background-repeat: no-repeat;
+}
+
+.settings{
+	background-image: url(../../img/Gear.png);
+	background-repeat: no-repeat;
+}
+
